@@ -181,3 +181,4 @@ def accept_kwargs(**kwargs):
     print(kwargs)
     
 accept_kwargs(foo="bazz", eggs="spam", bag=123)
+123
