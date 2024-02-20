@@ -40,6 +40,15 @@ class Truck(Car):
     WHEELS = 6
     MAX_FUEL = 20_000
     
+    def __init__(self, *args, laggage, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.laggage = laggage
+    
+    def add_fuel(self, value):
+        print(super().add_fuel)
+        res = super().add_fuel(value)
+        print("max distance now", res // self._fuel_consumption)
+        return res
     
 c = Car()
 print("car c consumption", c._fuel_consumption)
@@ -49,7 +58,9 @@ print(c.fuel)
 print("adding fiel. now:", c.add_fuel(2000))
 #print("car c fuel", c.__fuel)
 
-t = Truck(fuel_consumption=200)
+t = Truck(fuel_consumption=200, laggage=object())
 t.add_fuel(5000)
 t.go(30)
 t.add_fuel(20_000)
+
+print("adding fiel. now:", t.add_fuel(2000))
