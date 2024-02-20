@@ -64,3 +64,5 @@ t.go(30)
 t.add_fuel(20_000)
 
 print("adding fiel. now:", t.add_fuel(2000))
+
+print(Truck.__mro__)
