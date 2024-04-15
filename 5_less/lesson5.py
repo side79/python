@@ -115,7 +115,44 @@ class NewFoo(Foo):
 
 # NewFoo = MyMettaclass('NewFoo', (Foo, ), {'spam':'eggs'})
 
-print(Foo.SPAM)
-print(NewFoo.SPAM)
+# print(Foo.SPAM)
+# print(NewFoo.SPAM)
 
-print(Foo._SECRET_ATTR)
+# print(Foo._SECRET_ATTR)
+
+from abc import ABCMeta, abstractmethod
+
+class FileManagerABC(metaclass = ABCMeta):
+    
+    @abstractmethod
+    def read_file(self) -> str:
+        raise NotImplementedError
+
+    @abstractmethod
+    def write_to_file(self, text: str) -> int:
+        """
+        Write to file
+        :param text:
+        :return:
+        """
+        raise NotImplementedError
+
+class FileManager(FileManagerABC):
+    def __init__(self, filename: str):
+        self._filename = filename
+
+    def read_file(self) -> str:
+        with open(self._filename, 'r') as f:
+            text = f.read()
+            # f.seek(0)
+            return text
+
+    def write_to_file(self, text: str) -> int:
+        with open(self._filename, 'a') as f:
+            count = f.write(text)
+            print('written text', text)
+            return count
+    
+file_manager = FileManager('/home/pyadm/Lessons/5_less/new.text')
+print(file_manager.read_file())
+print(file_manager.write_to_file('\nAgain'))
