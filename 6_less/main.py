@@ -3,6 +3,8 @@ import traceback
 #import animals
 from animals import Bear, PositiveValueError
 
+from core.animals import Bear, PositiveValueError #from folder
+
 
 # bear = Bear('Faust', 5)
 
