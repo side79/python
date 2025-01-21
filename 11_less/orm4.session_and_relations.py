@@ -28,6 +28,9 @@ class User(Base):
 
     def __str__(self):
         return f"{self.__class__.__name__}(id={self.id}, username={self.username!r})"
+    
+    def __repr__(self):
+        return str(self)
 
 
 class Tag(Base):  # Исправлено название класса
@@ -72,11 +75,7 @@ def create_user(username: str) -> User:
 
     return u
 
-
-if __name__ == "__main__":
-    Base.metadata.create_all(engine)
-    session = Session()
-    #u = create_user("sam")
+def create_tags():
     user = session.query(User).filter_by(username="sam").one()
     user.is_staff = True
 
@@ -91,5 +90,51 @@ if __name__ == "__main__":
 
     for tag in tags:
         print(tag, tag.posts)
+
+
+if __name__ == "__main__":
+    Base.metadata.create_all(engine)
+    session = Session()
+    
+    # users = session.query(User).filter(
+    #     User.id > 1,
+    #     User.username != "sam2"
+    # ).all()
+    
+    # print(users)
+    
+    
+    #posts = session.query(Post).all()
+    
+    #print(posts, posts.tags)
+
+    # for post in posts:
+    #     print(post, post.tags)
+        
+    
+    flasks_posts = session.query(
+        User
+    ).join(
+        Post,
+        User.id == Post.author_id
+    ).filter(
+        Post.tags.any(Tag.name.ilike("new%"))
+    )
+    
+    print()
+    print()
+    print(flasks_posts)
+    print()
+    print()
+    print(flasks_posts.all())
+    print()
+    
+    test_qr = session.query(
+        Post
+    ).filter(
+        Post.author_id == 1
+    ).all()
+    
+    print(test_qr)
 
     session.close()
