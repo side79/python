@@ -29,9 +29,15 @@ async def main():
             query = select(users_table)
             result = await session.execute(query)
             rows = result.fetchall()
-
+            print(rows)
             for row in rows:
                 print(row)
+                
+                
+            query_2 = select(users_table.c.id, users_table.c.name).where(users_table.c.name == "Petr")
+            result = await session.execute(query_2)
+            james = result.fetchall()
+            print(james)
     finally:
         # Закрываем движок
         await engine.dispose()
