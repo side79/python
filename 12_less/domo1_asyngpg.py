@@ -31,6 +31,8 @@ async def main():
     
     #values = await conn.fetch()
     
+    #await conn.execute("UPDATE users SET birth_date = $1 WHERE id = $2;", date(1995, 5, 20), 6)
+    
     rows = await conn.fetch("Select * from users")
     today = date.today()
     for r in rows:
