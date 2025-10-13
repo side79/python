@@ -20,7 +20,7 @@ async def main():
         users_table = await conn.run_sync(sync_reflect)
     
     # Теперь таблица готова к использованию
-    #print("Структура таблицы:", users_table.columns.keys())
+    print("Структура таблицы:", users_table.columns.keys())
     
     # 4. Работаем с таблицей через сессию
     async_session = sessionmaker(engine, class_=AsyncSession)
@@ -52,7 +52,9 @@ async def main():
         # 2. fetchone() — только первая запись (но можно продолжить чтение)
         result = await session.execute(select(users_table))
         first_user = result.fetchone()
+        all_users_test = result.fetchall()
         print("Первая запись:", first_user)
+        print("Все пользователи:", all_users_test)
         print('-------------------------------------------------')  
         # 3. first() — первая запись (курсор закрыт)
         result = await session.execute(select(users_table))
