@@ -1,0 +1,50 @@
+2025-10-23 14:51:24,130 [INFO] root: Бот запускается...
+2025-10-23 14:51:24,131 [INFO] aiogram.dispatcher: Start polling
+2025-10-23 14:51:24,303 [INFO] aiogram.dispatcher: Run polling for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-23 14:52:57,858 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2025-10-23 14:52:57,858 [INFO] aiogram.dispatcher: Polling stopped for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-23 14:52:57,859 [INFO] aiogram.dispatcher: Polling stopped
+2025-10-23 14:52:58,119 [INFO] root: Бот завершил работу
+2025-10-23 16:35:13,879 [INFO] root: Бот запускается...
+2025-10-23 16:35:13,880 [INFO] aiogram.dispatcher: Start polling
+2025-10-23 16:35:14,043 [INFO] aiogram.dispatcher: Run polling for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-23 16:35:22,291 [INFO] aiogram.event: Update id=546392008 is handled. Duration 193 ms by bot id=8007111156
+2025-10-23 16:35:26,130 [INFO] aiogram.event: Update id=546392009 is handled. Duration 85 ms by bot id=8007111156
+2025-10-23 16:39:14,291 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2025-10-23 16:39:14,291 [INFO] aiogram.dispatcher: Polling stopped for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-23 16:39:14,292 [INFO] aiogram.dispatcher: Polling stopped
+2025-10-23 16:39:14,543 [INFO] root: Бот завершил работу
+2025-10-23 16:39:21,710 [INFO] root: Бот запускается...
+2025-10-23 16:39:21,711 [INFO] aiogram.dispatcher: Start polling
+2025-10-23 16:39:21,866 [INFO] aiogram.dispatcher: Run polling for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-23 16:39:25,417 [INFO] aiogram.event: Update id=546392010 is handled. Duration 197 ms by bot id=8007111156
+2025-10-23 16:39:35,532 [INFO] aiogram.event: Update id=546392011 is handled. Duration 73 ms by bot id=8007111156
+2025-10-23 16:41:30,172 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2025-10-23 16:41:30,173 [INFO] aiogram.dispatcher: Polling stopped for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-23 16:41:30,173 [INFO] aiogram.dispatcher: Polling stopped
+2025-10-23 16:41:30,426 [INFO] root: Бот завершил работу
+2025-10-23 16:41:37,461 [INFO] root: Бот запускается...
+2025-10-23 16:41:37,462 [INFO] aiogram.dispatcher: Start polling
+2025-10-23 16:41:37,620 [INFO] aiogram.dispatcher: Run polling for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-23 16:41:38,372 [INFO] aiogram.event: Update id=546392012 is handled. Duration 252 ms by bot id=8007111156
+2025-10-23 16:41:42,501 [INFO] aiogram.event: Update id=546392013 is handled. Duration 70 ms by bot id=8007111156
+2025-10-23 16:41:59,980 [INFO] aiogram.event: Update id=546392014 is handled. Duration 90 ms by bot id=8007111156
+2025-10-28 16:49:04,723 [INFO] root: Бот запускается...
+2025-10-28 16:49:04,724 [INFO] aiogram.dispatcher: Start polling
+2025-10-28 16:49:04,893 [INFO] aiogram.dispatcher: Run polling for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-28 16:49:21,284 [INFO] aiogram.event: Update id=546392015 is handled. Duration 264 ms by bot id=8007111156
+2025-10-28 16:52:24,491 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2025-10-28 16:52:24,493 [INFO] aiogram.dispatcher: Polling stopped for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-28 16:52:24,493 [INFO] aiogram.dispatcher: Polling stopped
+2025-10-28 16:52:24,746 [INFO] root: Бот завершил работу
+2025-10-28 16:52:33,169 [DEBUG] asyncio: Using selector: EpollSelector
+2025-10-28 16:52:33,171 [INFO] root: Бот запускается...
+2025-10-28 16:52:33,172 [INFO] aiogram.dispatcher: Start polling
+2025-10-28 16:52:33,340 [INFO] aiogram.dispatcher: Run polling for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-28 16:52:46,061 [INFO] aiogram.event: Update id=546392016 is handled. Duration 231 ms by bot id=8007111156
+2025-10-28 16:52:53,287 [INFO] aiogram.event: Update id=546392017 is handled. Duration 73 ms by bot id=8007111156
+2025-10-28 16:53:00,327 [INFO] aiogram.event: Update id=546392018 is handled. Duration 68 ms by bot id=8007111156
+2025-10-28 16:53:25,170 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2025-10-28 16:53:25,171 [INFO] aiogram.dispatcher: Polling stopped for bot @otustestpybot id=8007111156 - 'otus test py'
+2025-10-28 16:53:25,171 [INFO] aiogram.dispatcher: Polling stopped
+2025-10-28 16:53:25,424 [INFO] root: Бот завершил работу
